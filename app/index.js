@@ -3,7 +3,8 @@ spinner = document.getElementById('loading-spinner');
 content = document.createElement('div');
 content.classList = 'centered';
 content.id = 'content';
-content.innerText = 'Loaded!'
+content.innerHTML = '<h1>CEWL Application</h1><p>Loaded!</p><br>And here is a <a' +
+    ' href="./page.html">Page</a>.'
 
 
 body.removeChild(spinner);
