@@ -5,3 +5,31 @@
     position: absolute;
     min-width: 50vw;
 }
+
+body {
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+header {
+    margin: 0;
+    background-color: #dddddd;
+}
+
+nav, h1 {
+    display: inline;
+}
+
+nav {
+    margin-left: 1rem;
+}
+
+article, hgroup {
+    padding: 1rem;
+    max-width: 35rem;
+    margin: auto;
+}
+
+p {
+    text-align: justify;
+}
