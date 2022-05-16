@@ -24,9 +24,42 @@ function createIndexContent() {
         ]);
 }
 
+function addHeader() {
+    const headers = document.getElementsByTagName('header');
+    if (headers) {
+        headers[0].replaceWith(
+            elem('header', {}, [
+            elem('hgroup', {}, [
+                elem('h1', {innerText: 'CEWL Application'}),
+                elem('nav', {}, [
+                    elem('a', {href: './index.html', innerText: 'Home'}),
+                    elem('a', {href: './about.html', innerText: 'About'})
+                ])
+            ])
+        ]));
+    }
+}
+
+function addFooter() {
+    const footers = document.getElementsByTagName('footer');
+    if (footers) {
+        footers[0].replaceWith(
+            elem('footer', {}, [
+                elem('hgroup', {}, ['Footer, copyright'])
+            ]));
+    }
+}
+
+function appOnLoad() {
+    addHeader();
+    addFooter();
+}
+
 function loadIndexContent() {
     body = document.getElementsByTagName('body')[0];
     body.removeChild(document.getElementById('loading-spinner'));
     body.appendChild(createIndexContent())
 }
+
+
 

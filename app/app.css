@@ -16,8 +16,24 @@ header {
     background-color: #dddddd;
 }
 
+footer {
+    margin: 0;
+    background-color: #eeeeee;
+}
+
 nav, h1 {
     display: inline;
+}
+
+nav > a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+nav > a:hover {
+    text-decoration: underline;
 }
 
 nav {
