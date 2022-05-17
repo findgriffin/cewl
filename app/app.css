@@ -9,6 +9,9 @@
 body {
     background-color: #f7f7f7;
     margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 header {

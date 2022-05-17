@@ -50,7 +50,7 @@ window.onload = function appOnLoad() {
     Object.entries(SEMANTIC).forEach(([tag, element]) => replaceTag(tag, element));
     Object.entries(ROUTES).forEach(([suffix, element]) => {
         if (window.location.href.endsWith(suffix)) {
-            replaceTag('article', element);
+            replaceTag('main', element);
         }
     })
 }
